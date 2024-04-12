@@ -1,0 +1,20 @@
+rm compile_commands.json 
+bear -- clang -std=c++20 main.cpp -o main
+touch .clangd
+ls
+mkdir src
+rm a.out bitwise.cpp 
+cat compile_commands.json 
+rm \#main.cpp\# 
+rm .\#main.cpp 
+ls
+mv main.cpp src/
+git init
+git branch -m main
+git checkout main
+git status
+./compile.sh cards 
+./compile.sh cards 
+./compile.sh cards 
+./compile.sh cards 
+./compile.sh cards.x
